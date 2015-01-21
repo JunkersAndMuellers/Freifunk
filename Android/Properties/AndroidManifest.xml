@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.1" package="eu.straelen.freifunk" android:versionCode="6">
+	<uses-sdk />
+	<application android:icon="@drawable/icon" android:label="FreifunkStraelen">
+		<!-- Put your Google Maps V2 API Key here. This key will not work for you.-->
+		<!-- See https://developers.google.com/maps/documentation/android/start#obtaining_an_api_key -->
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDvXDC2OXZobu0GjDF443e5x2h2wBKIBzY" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<permission android:name="ffstraelen.android.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+		<uses-permission android:name="FFStraelen.Android.permission.MAPS_RECEIVE" />
+		<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>
